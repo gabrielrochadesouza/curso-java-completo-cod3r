@@ -1,0 +1,44 @@
+package Controle;
+
+public class SwitchSemBreak {
+
+	public static void main(String[] args) {
+		
+		String faixa = "marrom"; 
+		
+		switch (faixa.toLowerCase()) {
+		case "preta":
+		 System.out.println("Sei o Bassai-Dai...");
+		case "marrom":
+			System.out.println("Sei o Tekki Shodan");
+		case "roxa":
+		System.out.println("Sei o Heian Godan");
+		case "verde":
+			System.out.println("Sei o Heian Yodan");
+		case "Laranja":
+			System.out.println("Sei o heain Sandan");
+		case "vermelha":
+			System.out.println("Sei o Heain Nidan");
+		case "amarela":
+			System.out.println("Sei o Heain Shodan");
+	    	break;
+		default:
+			System.out.println("não sei de nada");
+		}
+	
+		    System.out.println("Fim!");
+	
+	int idade = 3;
+	
+	switch (idade) {
+	case 3:
+		System.out.println("Sabe Progamar");
+	case 2:
+		System.out.println("Sabe falar");
+	case 1:
+	       System.out.println("Sabe andar");
+	case 0:
+		System.out.println("Sabe respirar");
+	  }
+	}
+}
