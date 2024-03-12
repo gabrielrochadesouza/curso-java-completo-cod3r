@@ -1,22 +1,14 @@
 package Arrays;
 
-public class Usuario {
-	
+public class Usuario1 {
 	
 	String nome;
-	
-	Usuario(String nome) {
-		this.nome = nome;
-	}
-	
-	public String toString() {
-		return "Meu nome é " + this.nome + ".";
-	}
-  
+	String email;
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((email == null) ? 0 : email.hashCode());
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		return result;
 	}
@@ -28,12 +20,21 @@ public class Usuario {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Usuario other = (Usuario) obj;
+		Usuario1 other = (Usuario1) obj;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
+			return false;
 		if (nome == null) {
 			if (other.nome != null)
 				return false;
 		} else if (!nome.equals(other.nome))
 			return false;
 		return true;
-		}
-	  }
+	}
+
+	
+	
+	
+}
