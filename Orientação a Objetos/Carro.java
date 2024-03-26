@@ -1,38 +1,23 @@
-package oo.composicao;
+package Desafio;
 
 public class Carro {
 
-	final Motor motor;
-	
-	Carro(){
-		this.motor = new Motor(this);
-	}
-	
+	int velocidadeAtual;
+
 	void acelerar() {
-		if(motor.fatorInjeção < 2.6) {
-		motor.fatorInjeção += 0.4;
-	 }
-	}
+		velocidadeAtual += 5;
 	
+	
+	
+	}
 	void frear() {
-	if(motor.fatorInjeção > 0.5) {
-		motor.fatorInjeção -= 0.4;
-		}
+		if(velocidadeAtual >= 5) {		
+		velocidadeAtual -= 5;
+	} else {
+		velocidadeAtual = 0;	
+	  }
+     }
+	public String toString() {
+		return "Velociade Atual é " + velocidadeAtual + "Km/h." ;
 	}
-	
-	void ligar() {
-		
-		motor.ligado = true;
-	}
-	void desligar() {
-	motor.ligado = false;
-  
-	}
-	
-	boolean estaligado() {
-	return motor.ligado;
-	
-	
-	
-	}
-}
+} 

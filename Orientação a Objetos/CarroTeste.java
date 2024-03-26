@@ -1,48 +1,32 @@
-package oo.composicao;
+package Desafio;
 
 public class CarroTeste {
 
 	public static void main(String[] args) {
+		
 	
+	Carro c1 = new Ferrari();
 
-	Carro c1 = new Carro ();
-	System.out.println(c1.estaligado());
+	c1.acelerar();
+	System.out.println(c1);
+	
+	c1.acelerar();
+	System.out.println(c1);
 
-	c1.ligar();
-	System.out.println(c1.estaligado());
-	
-	System.out.println(c1.motor.giros());
-	
 	c1.acelerar();
-	c1.acelerar();
-	c1.acelerar();
-	c1.acelerar();
+	System.out.println(c1);
 	
-	System.out.println(c1.motor.giros());
+	Limusine c2 = new Limusine();
 	
-	c1.frear();
-	c1.frear();
-	c1.frear();
-	c1.frear();
-	c1.frear();
-	c1.frear();
-	c1.frear();
-	c1.frear();
+	c2.acelerar();
+	c2.frear();
+	System.out.println(c2);
 	
+	c2.acelerar();
+	c2.frear();
+	System.out.println(c2);
 	
-	
-	// faltou Encapsulamento!!! 
-	// c1.motor.fatorInjeção
-
-	System.out.println(c1.motor.giros() );
-	
-	// Relação bidirecional
-	System.out.println(c1.motor.carro.motor.carro.motor.giros());	
-	
-	
-	
-	
-	
-	
+	c2.acelerar();
+	System.out.println(c2);
 	}
 }
