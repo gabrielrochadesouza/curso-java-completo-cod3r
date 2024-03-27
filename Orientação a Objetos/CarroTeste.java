@@ -1,10 +1,13 @@
-package Desafio;
+package oo.herança.teste;
+
+import Desafio.Carro;
+import Desafio.Ferrari;
+import Desafio.Limusine;
 
 public class CarroTeste {
 
 	public static void main(String[] args) {
 		
-	
 	Carro c1 = new Ferrari();
 
 	c1.acelerar();
@@ -16,7 +19,7 @@ public class CarroTeste {
 	c1.acelerar();
 	System.out.println(c1);
 	
-	Limusine c2 = new Limusine();
+	Limusine c2 = new Limusine(400);
 	
 	c2.acelerar();
 	c2.frear();

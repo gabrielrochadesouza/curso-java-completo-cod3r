@@ -2,17 +2,24 @@ package Desafio;
 
 public class Carro {
 
-	int velocidadeAtual;
-
-	void acelerar() {
-		velocidadeAtual += 5;
+	public final int Velocidade_MAXIMA;
+	protected int velocidadeAtual;
+	protected int delta = 5;
 	
-	
-	
+	protected Carro(int velocidadeMaxima){
+		Velocidade_MAXIMA = velocidadeMaxima;	
 	}
-	void frear() {
+	
+	public void acelerar() {
+		if(velocidadeAtual + delta > Velocidade_MAXIMA) {
+			velocidadeAtual = Velocidade_MAXIMA;
+		} else {
+			velocidadeAtual += delta;
+		}
+	}
+	public void frear() {
 		if(velocidadeAtual >= 5) {		
-		velocidadeAtual -= 5;
+		  velocidadeAtual -= 5;
 	} else {
 		velocidadeAtual = 0;	
 	  }

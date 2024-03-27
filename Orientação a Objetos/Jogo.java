@@ -1,4 +1,8 @@
-package oo.herança;
+package oo.herança.teste;
+
+import oo.herança.Direcão;
+import oo.herança.Heroi;
+import oo.herança.Monstro;
 
 public class Jogo {
 
