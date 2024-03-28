@@ -1,4 +1,4 @@
-package oo.herança.teste;
+	package oo.herança.teste;
 
 import Desafio.Carro;
 import Desafio.Ferrari;
@@ -20,6 +20,11 @@ public class CarroTeste {
 	System.out.println(c1);
 	
 	Limusine c2 = new Limusine(400);
+	c2.ligarTurbo();
+	c2.ligarAr();
+	c2.desligarAr();
+	
+	System.out.println(c2.VelocidadeDOAr());
 	
 	c2.acelerar();
 	c2.frear();
