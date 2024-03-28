@@ -1,11 +1,10 @@
 package Polimorfismo;
 
-public class Comida {
- private double peso;
+public abstract class Comida {
+     private double peso;
 
 	public Comida(double peso) {
 		setPeso(peso);
-	
 	
 	}
 	
