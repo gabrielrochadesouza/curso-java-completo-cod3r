@@ -15,7 +15,7 @@ public abstract class Comida {
 	public void setPeso(double peso) {
 		if(peso > 0) {
 			this.peso = peso;
-	
+	// refaturação 4 horas 
 	   }
 	  }	
 	}
